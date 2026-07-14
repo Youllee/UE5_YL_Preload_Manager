@@ -10,16 +10,10 @@ public class YLPreloadManager : ModuleRules
 			new string[]
 			{
 				"Core",
+				"CoreUObject",
 				"DataRegistry",
 				"DeveloperSettings",
 				"Engine",
-			}
-			);
-		
-		PrivateDependencyModuleNames.AddRange(
-			new string[]
-			{
-				"CoreUObject",
 			}
 			);
 	}

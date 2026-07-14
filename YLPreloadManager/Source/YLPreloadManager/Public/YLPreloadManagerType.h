@@ -1,8 +1,9 @@
 ﻿#pragma once
 
 #include "CoreMinimal.h"
-#include "DataRegistry.h"
+#include "Engine/DataAsset.h"
 #include "Engine/DataTable.h"
+#include "DataRegistry.h"
 #include "YLPreloadManagerType.generated.h"
 
 UENUM()
@@ -32,8 +33,8 @@ struct YLPRELOADMANAGER_API FYLDataAssetPreloadData : public FYLPreloadDataBase
 	GENERATED_BODY()
 
 public:
-	UPROPERTY(EditAnywhere, Category = "YL|Preload", meta = (DisplayPriority = 1, AllowedClasses = "/Script/Engine.DataAsset"))
-	TSoftObjectPtr<UObject> DataAsset;
+	UPROPERTY(EditAnywhere, Category = "YL|Preload", meta = (DisplayPriority = 1))
+	TSoftObjectPtr<UDataAsset> DataAsset;
 };
 
 USTRUCT(BlueprintType, meta = (PresentAsType = "YLPreloadDataBase"))

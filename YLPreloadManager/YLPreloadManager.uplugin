@@ -3,7 +3,7 @@
 	"Version": 1,
 	"VersionName": "1.0",
 	"FriendlyName": "Youllee's Preload Manager",
-	"Description": "Preloads configured Assets for editor and game worlds.",
+	"Description": "Preload configured assets for Editor and Game worlds.",
 	"Category": "Made by Youllee",
 	"CreatedBy": "Youllee",
 	"CreatedByURL": "",
