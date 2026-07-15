@@ -2,7 +2,7 @@
 
 Unreal Engine에서 자주 사용하는 데이터 에셋을 Editor World와 Game World에 미리 로드해두기 위한 플러그인입니다.
 
-프로젝트 설정에서 'DataAsset', 'DataTable', 'DataRegistry'를 등록하면, 지정한 월드 수명주기에 맞춰 에셋을 동기 로드하고 강한 참조로 유지합니다.
+프로젝트 설정에서 'DataAsset', 'DataTable', 'DataRegistry'를 등록하면, 지정한 월드 수명주기에 맞춰 에셋을 지정된 방식(동기/비동기)으로 로드하고 강한 참조로 유지합니다.
 
 게임 시스템이 데이터를 요청하기 전에 필요한 에셋을 미리 준비해두고 싶을 때 사용할 수 있습니다.
 
@@ -20,7 +20,7 @@ Unreal Engine에서 자주 사용하는 데이터 에셋을 Editor World와 Game
 ## 주요 기능
 
 - 'DataAsset', 'DataTable', 'DataRegistry' Preload
-- Preload 시점 설정 (Editor World / Game World)
+- Preload 시점 설정 (Editor World / Server World / Client World)
 
 ## 설치
 
@@ -32,7 +32,6 @@ YourProject/
     YLPreloadManager/
       YLPreloadManager.uplugin
       Source/
-      Config/
       Resources/
 ```
 
@@ -81,7 +80,6 @@ Project Settings > Game > Youllee's Preload Manager
 
 ## 주의사항
 
-- 프리로드는 동기 로드로 처리됩니다. 에셋의 용량이 크거나 지나치게 많은 에셋을 등록하면, 프리로드 시 비용이 커질 수 있습니다.
 - 이 플러그인은 에셋을 미리 로드하고 참조를 유지하는 용도이며, 모든 데이터 초기화 순서를 자동으로 보장하지 않습니다.
 
 ## Current Status
