@@ -1,6 +1,6 @@
 # Youllee's Preload Manager
 
-Unreal Engine에서 자주 사용하는 데이터 에셋을 Editor World와 Game World에 미리 로드해두기 위한 플러그인입니다.
+Unreal Engine에서 자주 사용하는 데이터 에셋을 Editor World와 Server World, Client World에 미리 로드해두기 위한 플러그인입니다.
 
 프로젝트 설정에서 'DataAsset', 'DataTable', 'DataRegistry'를 등록하면, 지정한 월드 수명주기에 맞춰 에셋을 지정된 방식(동기/비동기)으로 로드하고 강한 참조로 유지합니다.
 
@@ -54,7 +54,8 @@ Project Settings > Game > Youllee's Preload Manager
 각 항목에는 다음 옵션이 있습니다.
 
 - **Preload on Editor**: 에디터 월드에서 프리로드합니다.
-- **Preload on Game**: 게임 월드에서 프리로드합니다.
+- **Preload on Server**: 서버 월드에서 프리로드합니다.
+- **Preload on Client**: 클라이언트 월드에서 프리로드합니다.
 
 ## 에셋 수명 (v1.1)
 
