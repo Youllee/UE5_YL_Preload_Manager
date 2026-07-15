@@ -18,6 +18,9 @@ public class YLPreloadManagerEditor : ModuleRules
 			new string[]
 			{
 				"CoreUObject",
+				"DeveloperSettings",
+				"EditorSubsystem",
+				"Engine",
 				"PropertyEditor",
 				"Slate",
 				"SlateCore",
