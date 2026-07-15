@@ -62,7 +62,7 @@ Project Settings > Game > Youllee's Preload Manager
 - **Preload on Server**: 서버 월드에서 프리로드합니다.
 - **Preload on Client**: 클라이언트 월드에서 프리로드합니다.
 
-## 에셋 수명 (v1.1)
+## 에셋 수명 (v1.1+)
 
 이 플러그인은 로드한 에셋을 'TStrongObjectPtr'로 보관합니다.
 따라서 프리로드 목록에 들어간 에셋은 해당 수명주기가 끝날 때까지 GC 대상이 되지 않습니다.
@@ -71,7 +71,7 @@ Project Settings > Game > Youllee's Preload Manager
 - Preload on Server : true인 경우, Server World 초기화 이후 로드되고, Server World 클린업 시 언로드 됩니다.
 - Preload on Client : true인 경우, Client World 초기화 이후 로드되고, Client World 클린업 시 언로드 됩니다.
 
-## 로드 방식 (v1.1)
+## 로드 방식 (v1.1+)
 
 이 플러그인은 동기/비동기 로드 중 한가지를 선택할 수 있습니다.
 
